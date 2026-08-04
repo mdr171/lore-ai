@@ -1,4 +1,4 @@
-# Lore.AI 🗡️🔮
+# Lore.AI
 
 Web app buat analisis lore novel Xianxia pakai AI (DeepSeek API). 
 Tujuannya biar gak bingung ngafalin ribuan karakter, sect, Realm kultivasi, sama hubungan antar karakter yang belibet pas ngebaca novel wuxia/xianxia ribuan bab.
