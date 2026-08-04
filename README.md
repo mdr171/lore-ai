@@ -19,41 +19,12 @@ Backend Laravel + frontend Blade CSS sederhana buat nampilin visualisasi data lo
 - **AI Service**: DeepSeek API (deepseek-chat / JSON mode)
 - **Frontend**: Laravel Blade + Custom CSS
 
-## Setup Project
+## How It Works
 
-1. Clone repo & masuk ke direktori:
-   ```bash
-   cd lore-ai
-   ```
+1. **Input Processing**: Teks novel yang diinput pengguna akan diterima dan diproses oleh backend Laravel.
+2. **AI Extraction**: Laravel berkomunikasi dengan DeepSeek API (via JSON Mode) untuk mengekstrak entitas-entitas penting secara otomatis dan terstruktur.
+3. **Data Mapping**: Entitas yang berhasil diekstrak (Karakter, Fraksi/Klan, Item Lore, Relasi) dipetakan dan disimpan ke dalam database MySQL.
+4. **Data Visualization**: Frontend merender data tersebut menjadi dashboard interaktif, menampilkan ranking kekuatan karakter, dan peta relasi antar klan.
 
-2. Install dependency PHP:
-   ```bash
-   composer install
-   ```
-
-3. Copy file environment:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. Set database di `.env`:
-   ```env
-   DB_DATABASE=lore_ai
-   DB_USERNAME=root
-   DB_PASSWORD=
-   
-   DEEPSEEK_API_KEY=sk-xxxx...
-   ```
-
-5. Generate key & run migration:
-   ```bash
-   php artisan key:generate
-   php artisan migrate
-   ```
-
-6. Jalankan server:
-   ```bash
-   php artisan serve
-   ```
-
-Buka `http://localhost:8000` di browser. Enjoy reading without context loss! 🚀
+## Status Proyek
+Saat ini proyek difokuskan pada tahap *backend optimization* untuk ekstraksi lore novel bergenre Xianxia/Wuxia dengan prompt engineering khusus pada model DeepSeek. (Deployment sedang dalam proses penyiapan).
