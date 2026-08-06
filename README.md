@@ -14,7 +14,7 @@ Backend Laravel + frontend Blade CSS sederhana buat nampilin visualisasi data lo
 
 ## Tech Stack
 
-- **Backend**: Laravel 11 (PHP 8.2+)
+- **Backend**: Laravel
 - **Database**: MySQL
 - **AI Service**: DeepSeek API (deepseek-chat / JSON mode)
 - **Frontend**: Laravel Blade + Custom CSS
